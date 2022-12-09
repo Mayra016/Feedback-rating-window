@@ -1,0 +1,183 @@
+body {
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Overpass';
+    align-items: center;
+}
+
+/*
+    Evaluation window
+*/
+button{
+    cursor: pointer;
+}
+
+.star{
+    padding: 15px;
+    background-color: hsl(213, 17%, 27%, 40%);
+    border-radius: 50px;
+    border-width: 30px, 30px;
+    
+}
+.container {
+    background-color: hsl(213, 19%, 18%, 65%);
+    padding: 30px;
+    border-radius: 30px;
+    width: 1440px;
+    height: 1440px;
+    display: block;
+    width: 25%;
+    height: 50%;
+    margin: 100px 0px;
+}
+
+.texts {
+    gap: 2px;
+    display: flexbox;
+
+}
+
+h3 {
+    color: hsl(216, 12%, 54%);
+    font-size: 15px;
+    font-weight: 400;
+    gap: 2px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+.btns button{
+    color: hsl(216, 12%, 54%);
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(213, 17%, 27%, 40%);
+    width: 50px;
+    height: 50px;
+}
+
+.btns button:hover{
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    background-color: none;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+h1, .submit {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.btn-submit {
+    justify-content: center;
+    display: flex;
+}
+
+.submit {
+    margin: 2px;
+    background-color: hsl(25, 97%, 53%);
+    width: 90%;
+    height: 40px;
+    justify-content: space-between;
+    border-radius: 20px;
+    border: none;
+}
+
+.submit:hover {
+    background-color: hsl(0, 0%, 100%);
+    color:hsl(25, 97%, 53%);
+}
+
+.result {
+    color:hsl(25, 97%, 53%);
+    background-color: hsl(216, 12%, 54%, 10%);
+    justify-content: center;
+    display: flex;
+    width: 50%;
+    border-radius: 20px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*  Second window
+    Mesage with the submitted values
+*/
+
+.thanksImage {
+    padding-bottom: 30px;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.thanksText, .thanksImage {
+    display: flexbox;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.thanksText h3{
+    font-size: 13.5px;
+}
+
+.afterSubmiting{
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* RESPONSIVE */
+
+@media (min-width: 700px) {
+    .body {
+        padding: 8rem;
+    }
+  }
+
+@media (max-width: 700px) {
+    .container {
+      width: 50%;
+    }
+    .btns button{
+        width: 40px;
+        height: 40px;
+    }
+    .body {
+        padding: none;
+        margin: 0px;
+    }
+  }
+
+  @media (max-width: 470px) {
+    .container {
+      width: 60%;
+    }
+    .btns button{
+        width: 20px;
+        height: 20px;
+    }
+    .evaluationScreen{
+        width: 100%;
+    }
+    .body {
+        padding: 10px;
+        margin: 10px;
+    }
+  }

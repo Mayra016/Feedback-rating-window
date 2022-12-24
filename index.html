@@ -11,14 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Mystery+Quest&family=Overpass:ital,wght@0,700;1,400&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
 </head> 
 <body>
-    <div class="container">
+    <main>
+        <div class="container">
 
         <!-- Screen before submiting -->
        
         <div class="evaluationScreen" id="evaluationScreen">
             <div class="intro">
                 <div class="imgbackground">
-                    <image class="star" src="./images/icon-star.svg"></image>
+                    <image class="star" src="./images/icon-star.svg" alt="star-icon" aria-hidden="true"></image>
                 </div>
                 <div class="texts">
                     <h1>How did we do?</h1>
@@ -42,7 +43,7 @@
         <div class="afterSubmiting" id="afterSubmiting">
             <div class="imgAndResult">
                 <div class="imgThanks">
-                    <image class="thanksImage" src="./images/illustration-thank-you.svg"> </image>
+                    <image class="thanksImage" src="./images/illustration-thank-you.svg" alt="thanks-image" aria-hidden="true"> </image>
                 </div>
                 <div>
                     <h3 class="result" id="mesage"></h3>
@@ -54,6 +55,7 @@
             </div>
         </div>
     </div>
+    </main>    
 
 <script src="./index.js"></script>
 </body>
